@@ -8,7 +8,8 @@ CREATE TABLE IF NOT EXISTS dogs(
   dog_id INTEGER NOT NULL PRIMARY KEY,
   dog_name VARCHAR(20),
   breed VARCHAR(20),
-  color VARCHAR(50)
+  color VARCHAR(50),
+  good_dog BOOLEAN
 );
 
 INSERT INTO dogs (dog_name, breed) VALUES
@@ -19,4 +20,7 @@ update dogs
   set dog_name = "Sitstay"
   where dog_id = 2;
 
+update dogs
+  set good_dog = true;
+  
 SELECT * FROM dogs;
