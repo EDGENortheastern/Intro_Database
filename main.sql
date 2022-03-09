@@ -12,7 +12,11 @@ CREATE TABLE IF NOT EXISTS dogs(
 );
 
 INSERT INTO dogs (dog_name, breed) VALUES
-("Pluto", "German Sheppard"),
+("Cat", "German Sheppard"),
 ("Bobik", "Russian Borzoi");
+
+update dogs
+  set dog_name = "Sitstay"
+  where dog_id = 2;
 
 SELECT * FROM dogs;
